@@ -30,6 +30,7 @@
 		2FDC03B12642C5C8009D1E17 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC038E2642C5C8009D1E17 /* UIImageExtensions.swift */; };
 		2FDC03B82642C5C8009D1E17 /* UIViewCustomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03962642C5C8009D1E17 /* UIViewCustomized.swift */; };
 		2FDC03BA2642C5C8009D1E17 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03982642C5C8009D1E17 /* Utils.swift */; };
+		2FDC03D22642CC69009D1E17 /* GalleryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03D12642CC69009D1E17 /* GalleryCollectionViewCell.swift */; };
 		649E91B7C13B336C0EFC0030 /* Pods_ImgurGalleryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877F4830FD2F90C156C15811 /* Pods_ImgurGalleryApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,7 @@
 		2FDC038E2642C5C8009D1E17 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
 		2FDC03962642C5C8009D1E17 /* UIViewCustomized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustomized.swift; sourceTree = "<group>"; };
 		2FDC03982642C5C8009D1E17 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		2FDC03D12642CC69009D1E17 /* GalleryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryCollectionViewCell.swift; sourceTree = "<group>"; };
 		877F4830FD2F90C156C15811 /* Pods_ImgurGalleryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImgurGalleryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C1F5BB218E02F3E750B3F6 /* Pods-ImgurGalleryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgurGalleryApp.release.xcconfig"; path = "Target Support Files/Pods-ImgurGalleryApp/Pods-ImgurGalleryApp.release.xcconfig"; sourceTree = "<group>"; };
 		DD5FE558AD6D01D1AD0543DA /* Pods-ImgurGalleryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgurGalleryApp.debug.xcconfig"; path = "Target Support Files/Pods-ImgurGalleryApp/Pods-ImgurGalleryApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -121,9 +123,10 @@
 		2FDC035D2642C413009D1E17 /* Gallery Screen */ = {
 			isa = PBXGroup;
 			children = (
+				2FDC03CE2642CC31009D1E17 /* Models */,
+				2FDC03CF2642CC39009D1E17 /* Views */,
+				2FDC03D02642CC41009D1E17 /* ViewModels */,
 				2FDC03662642C464009D1E17 /* GalleryViewController.swift */,
-				2FDC03692642C47F009D1E17 /* GalleryModel.swift */,
-				2FDC036C2642C489009D1E17 /* GalleryViewModel.swift */,
 			);
 			path = "Gallery Screen";
 			sourceTree = "<group>";
@@ -187,6 +190,30 @@
 				2FDC03962642C5C8009D1E17 /* UIViewCustomized.swift */,
 			);
 			path = "Customised IBDesignables";
+			sourceTree = "<group>";
+		};
+		2FDC03CE2642CC31009D1E17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC03692642C47F009D1E17 /* GalleryModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2FDC03CF2642CC39009D1E17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC03D12642CC69009D1E17 /* GalleryCollectionViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2FDC03D02642CC41009D1E17 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC036C2642C489009D1E17 /* GalleryViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		7B719D056BFF8FCAF431FCDF /* Frameworks */ = {
@@ -339,6 +366,7 @@
 				2FDC03A02642C5C8009D1E17 /* UserDefaultsConstants.swift in Sources */,
 				2FDC03A22642C5C8009D1E17 /* FontsConstants.swift in Sources */,
 				2FDC03B12642C5C8009D1E17 /* UIImageExtensions.swift in Sources */,
+				2FDC03D22642CC69009D1E17 /* GalleryCollectionViewCell.swift in Sources */,
 				2FDC036A2642C47F009D1E17 /* GalleryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +522,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.ImgurGalleryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -514,6 +543,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikhil.ImgurGalleryApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

@@ -9,21 +9,33 @@ import UIKit
 
 class AboutViewController: UIViewController {
 
+    // MARK: - Outlets
+    @IBOutlet weak var appVersionLabel: UILabel!
+    @IBOutlet weak var buildNumberLabel: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    
+    // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if let appVersion = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String {
+            appVersionLabel.text = "App Version:- \(appVersion)"
+        }
+        if let buildNumber = Bundle.main.infoDictionary?["CFBundleVersion"] as? String {
+            buildNumberLabel.text = "Build:- \(buildNumber)"
+        }
+        
+        timeLabel.text = getDateString()
     }
-    
 
-    /*
-    // MARK: - Navigation
+    // MARK: - Custom Methods
+    func getDateString() -> String? {
+        let formatter = DateFormatter()
+        formatter.isLenient = true
+        formatter.dateFormat = "hh:mm a"
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        let corrected = formatter.string(from: Date())
+        return corrected
     }
-    */
 
 }
