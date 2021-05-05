@@ -3,27 +3,65 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2FDC03452642C0D8009D1E17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03442642C0D8009D1E17 /* AppDelegate.swift */; };
-		2FDC03472642C0D8009D1E17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03462642C0D8009D1E17 /* SceneDelegate.swift */; };
-		2FDC03492642C0D8009D1E17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03482642C0D8009D1E17 /* ViewController.swift */; };
 		2FDC034C2642C0D8009D1E17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDC034A2642C0D8009D1E17 /* Main.storyboard */; };
 		2FDC034E2642C0DA009D1E17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FDC034D2642C0DA009D1E17 /* Assets.xcassets */; };
 		2FDC03512642C0DA009D1E17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FDC034F2642C0DA009D1E17 /* LaunchScreen.storyboard */; };
+		2FDC03612642C441009D1E17 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03602642C441009D1E17 /* AboutViewController.swift */; };
+		2FDC03642642C453009D1E17 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03632642C453009D1E17 /* DetailsViewController.swift */; };
+		2FDC03672642C464009D1E17 /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03662642C464009D1E17 /* GalleryViewController.swift */; };
+		2FDC036A2642C47F009D1E17 /* GalleryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03692642C47F009D1E17 /* GalleryModel.swift */; };
+		2FDC036D2642C489009D1E17 /* GalleryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC036C2642C489009D1E17 /* GalleryViewModel.swift */; };
+		2FDC039E2642C5C8009D1E17 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC037A2642C5C8009D1E17 /* Strings.swift */; };
+		2FDC039F2642C5C8009D1E17 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC037B2642C5C8009D1E17 /* ColorConstants.swift */; };
+		2FDC03A02642C5C8009D1E17 /* UserDefaultsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC037C2642C5C8009D1E17 /* UserDefaultsConstants.swift */; };
+		2FDC03A12642C5C8009D1E17 /* StoryboardConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC037D2642C5C8009D1E17 /* StoryboardConstants.swift */; };
+		2FDC03A22642C5C8009D1E17 /* FontsConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC037E2642C5C8009D1E17 /* FontsConstants.swift */; };
+		2FDC03A72642C5C8009D1E17 /* CommonExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03842642C5C8009D1E17 /* CommonExtensions.swift */; };
+		2FDC03AB2642C5C8009D1E17 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03882642C5C8009D1E17 /* StringExtensions.swift */; };
+		2FDC03AC2642C5C8009D1E17 /* ImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03892642C5C8009D1E17 /* ImageExtension.swift */; };
+		2FDC03AD2642C5C8009D1E17 /* UITableviewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC038A2642C5C8009D1E17 /* UITableviewExtension.swift */; };
+		2FDC03AE2642C5C8009D1E17 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC038B2642C5C8009D1E17 /* UIViewExtension.swift */; };
+		2FDC03AF2642C5C8009D1E17 /* URLExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC038C2642C5C8009D1E17 /* URLExtension.swift */; };
+		2FDC03B12642C5C8009D1E17 /* UIImageExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC038E2642C5C8009D1E17 /* UIImageExtensions.swift */; };
+		2FDC03B82642C5C8009D1E17 /* UIViewCustomized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03962642C5C8009D1E17 /* UIViewCustomized.swift */; };
+		2FDC03BA2642C5C8009D1E17 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDC03982642C5C8009D1E17 /* Utils.swift */; };
+		649E91B7C13B336C0EFC0030 /* Pods_ImgurGalleryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 877F4830FD2F90C156C15811 /* Pods_ImgurGalleryApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FDC03412642C0D8009D1E17 /* ImgurGalleryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImgurGalleryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FDC03442642C0D8009D1E17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2FDC03462642C0D8009D1E17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2FDC03482642C0D8009D1E17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2FDC034B2642C0D8009D1E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FDC034D2642C0DA009D1E17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FDC03502642C0DA009D1E17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FDC03522642C0DA009D1E17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FDC03602642C441009D1E17 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		2FDC03632642C453009D1E17 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		2FDC03662642C464009D1E17 /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		2FDC03692642C47F009D1E17 /* GalleryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryModel.swift; sourceTree = "<group>"; };
+		2FDC036C2642C489009D1E17 /* GalleryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewModel.swift; sourceTree = "<group>"; };
+		2FDC037A2642C5C8009D1E17 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		2FDC037B2642C5C8009D1E17 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
+		2FDC037C2642C5C8009D1E17 /* UserDefaultsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsConstants.swift; sourceTree = "<group>"; };
+		2FDC037D2642C5C8009D1E17 /* StoryboardConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardConstants.swift; sourceTree = "<group>"; };
+		2FDC037E2642C5C8009D1E17 /* FontsConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FontsConstants.swift; sourceTree = "<group>"; };
+		2FDC03842642C5C8009D1E17 /* CommonExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonExtensions.swift; sourceTree = "<group>"; };
+		2FDC03882642C5C8009D1E17 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		2FDC03892642C5C8009D1E17 /* ImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageExtension.swift; sourceTree = "<group>"; };
+		2FDC038A2642C5C8009D1E17 /* UITableviewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableviewExtension.swift; sourceTree = "<group>"; };
+		2FDC038B2642C5C8009D1E17 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2FDC038C2642C5C8009D1E17 /* URLExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLExtension.swift; sourceTree = "<group>"; };
+		2FDC038E2642C5C8009D1E17 /* UIImageExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtensions.swift; sourceTree = "<group>"; };
+		2FDC03962642C5C8009D1E17 /* UIViewCustomized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewCustomized.swift; sourceTree = "<group>"; };
+		2FDC03982642C5C8009D1E17 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		877F4830FD2F90C156C15811 /* Pods_ImgurGalleryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImgurGalleryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C1F5BB218E02F3E750B3F6 /* Pods-ImgurGalleryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgurGalleryApp.release.xcconfig"; path = "Target Support Files/Pods-ImgurGalleryApp/Pods-ImgurGalleryApp.release.xcconfig"; sourceTree = "<group>"; };
+		DD5FE558AD6D01D1AD0543DA /* Pods-ImgurGalleryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImgurGalleryApp.debug.xcconfig"; path = "Target Support Files/Pods-ImgurGalleryApp/Pods-ImgurGalleryApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				649E91B7C13B336C0EFC0030 /* Pods_ImgurGalleryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +81,8 @@
 			children = (
 				2FDC03432642C0D8009D1E17 /* ImgurGalleryApp */,
 				2FDC03422642C0D8009D1E17 /* Products */,
+				B20B265484F87DFF493FB41E /* Pods */,
+				7B719D056BFF8FCAF431FCDF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +98,112 @@
 			isa = PBXGroup;
 			children = (
 				2FDC03442642C0D8009D1E17 /* AppDelegate.swift */,
-				2FDC03462642C0D8009D1E17 /* SceneDelegate.swift */,
-				2FDC03482642C0D8009D1E17 /* ViewController.swift */,
+				2FDC035B2642C403009D1E17 /* App */,
+				2FDC03742642C5C8009D1E17 /* Utilities */,
 				2FDC034A2642C0D8009D1E17 /* Main.storyboard */,
 				2FDC034D2642C0DA009D1E17 /* Assets.xcassets */,
 				2FDC034F2642C0DA009D1E17 /* LaunchScreen.storyboard */,
 				2FDC03522642C0DA009D1E17 /* Info.plist */,
 			);
 			path = ImgurGalleryApp;
+			sourceTree = "<group>";
+		};
+		2FDC035B2642C403009D1E17 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC035F2642C42D009D1E17 /* About Screen */,
+				2FDC035E2642C41F009D1E17 /* Detail Screen */,
+				2FDC035D2642C413009D1E17 /* Gallery Screen */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2FDC035D2642C413009D1E17 /* Gallery Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC03662642C464009D1E17 /* GalleryViewController.swift */,
+				2FDC03692642C47F009D1E17 /* GalleryModel.swift */,
+				2FDC036C2642C489009D1E17 /* GalleryViewModel.swift */,
+			);
+			path = "Gallery Screen";
+			sourceTree = "<group>";
+		};
+		2FDC035E2642C41F009D1E17 /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC03632642C453009D1E17 /* DetailsViewController.swift */,
+			);
+			path = "Detail Screen";
+			sourceTree = "<group>";
+		};
+		2FDC035F2642C42D009D1E17 /* About Screen */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC03602642C441009D1E17 /* AboutViewController.swift */,
+			);
+			path = "About Screen";
+			sourceTree = "<group>";
+		};
+		2FDC03742642C5C8009D1E17 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC03792642C5C8009D1E17 /* Constants */,
+				2FDC03812642C5C8009D1E17 /* Extensions */,
+				2FDC03952642C5C8009D1E17 /* Customised IBDesignables */,
+				2FDC03982642C5C8009D1E17 /* Utils.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		2FDC03792642C5C8009D1E17 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC037A2642C5C8009D1E17 /* Strings.swift */,
+				2FDC037B2642C5C8009D1E17 /* ColorConstants.swift */,
+				2FDC037C2642C5C8009D1E17 /* UserDefaultsConstants.swift */,
+				2FDC037D2642C5C8009D1E17 /* StoryboardConstants.swift */,
+				2FDC037E2642C5C8009D1E17 /* FontsConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		2FDC03812642C5C8009D1E17 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC03842642C5C8009D1E17 /* CommonExtensions.swift */,
+				2FDC03882642C5C8009D1E17 /* StringExtensions.swift */,
+				2FDC03892642C5C8009D1E17 /* ImageExtension.swift */,
+				2FDC038A2642C5C8009D1E17 /* UITableviewExtension.swift */,
+				2FDC038B2642C5C8009D1E17 /* UIViewExtension.swift */,
+				2FDC038C2642C5C8009D1E17 /* URLExtension.swift */,
+				2FDC038E2642C5C8009D1E17 /* UIImageExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2FDC03952642C5C8009D1E17 /* Customised IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				2FDC03962642C5C8009D1E17 /* UIViewCustomized.swift */,
+			);
+			path = "Customised IBDesignables";
+			sourceTree = "<group>";
+		};
+		7B719D056BFF8FCAF431FCDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				877F4830FD2F90C156C15811 /* Pods_ImgurGalleryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B20B265484F87DFF493FB41E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD5FE558AD6D01D1AD0543DA /* Pods-ImgurGalleryApp.debug.xcconfig */,
+				A1C1F5BB218E02F3E750B3F6 /* Pods-ImgurGalleryApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +213,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2FDC03552642C0DA009D1E17 /* Build configuration list for PBXNativeTarget "ImgurGalleryApp" */;
 			buildPhases = (
+				B7E11342F117A954FF398A30 /* [CP] Check Pods Manifest.lock */,
 				2FDC033D2642C0D8009D1E17 /* Sources */,
 				2FDC033E2642C0D8009D1E17 /* Frameworks */,
 				2FDC033F2642C0D8009D1E17 /* Resources */,
+				A48C44239469FE172527D5DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,14 +273,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A48C44239469FE172527D5DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImgurGalleryApp/Pods-ImgurGalleryApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImgurGalleryApp/Pods-ImgurGalleryApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImgurGalleryApp/Pods-ImgurGalleryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B7E11342F117A954FF398A30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImgurGalleryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2FDC033D2642C0D8009D1E17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FDC03492642C0D8009D1E17 /* ViewController.swift in Sources */,
+				2FDC03AB2642C5C8009D1E17 /* StringExtensions.swift in Sources */,
+				2FDC03AF2642C5C8009D1E17 /* URLExtension.swift in Sources */,
+				2FDC03BA2642C5C8009D1E17 /* Utils.swift in Sources */,
+				2FDC03612642C441009D1E17 /* AboutViewController.swift in Sources */,
+				2FDC039E2642C5C8009D1E17 /* Strings.swift in Sources */,
+				2FDC03AD2642C5C8009D1E17 /* UITableviewExtension.swift in Sources */,
+				2FDC039F2642C5C8009D1E17 /* ColorConstants.swift in Sources */,
+				2FDC036D2642C489009D1E17 /* GalleryViewModel.swift in Sources */,
+				2FDC03A12642C5C8009D1E17 /* StoryboardConstants.swift in Sources */,
+				2FDC03672642C464009D1E17 /* GalleryViewController.swift in Sources */,
+				2FDC03A72642C5C8009D1E17 /* CommonExtensions.swift in Sources */,
+				2FDC03AC2642C5C8009D1E17 /* ImageExtension.swift in Sources */,
+				2FDC03B82642C5C8009D1E17 /* UIViewCustomized.swift in Sources */,
+				2FDC03AE2642C5C8009D1E17 /* UIViewExtension.swift in Sources */,
 				2FDC03452642C0D8009D1E17 /* AppDelegate.swift in Sources */,
-				2FDC03472642C0D8009D1E17 /* SceneDelegate.swift in Sources */,
+				2FDC03642642C453009D1E17 /* DetailsViewController.swift in Sources */,
+				2FDC03A02642C5C8009D1E17 /* UserDefaultsConstants.swift in Sources */,
+				2FDC03A22642C5C8009D1E17 /* FontsConstants.swift in Sources */,
+				2FDC03B12642C5C8009D1E17 /* UIImageExtensions.swift in Sources */,
+				2FDC036A2642C47F009D1E17 /* GalleryModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +483,7 @@
 		};
 		2FDC03562642C0DA009D1E17 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD5FE558AD6D01D1AD0543DA /* Pods-ImgurGalleryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +503,7 @@
 		};
 		2FDC03572642C0DA009D1E17 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C1F5BB218E02F3E750B3F6 /* Pods-ImgurGalleryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
